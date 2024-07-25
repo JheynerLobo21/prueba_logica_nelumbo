@@ -1,0 +1,61 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.calculadora{
+  width: clamp(31.25rem, 36.0417rem + -23.9583vw, 16.875rem);
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+
+.medidas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.medidas button{
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input{
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+input:active{
+  outline: none;
+}
+
+input:invalid{
+  border:2px solid red;
+}
+
+input:valid{
+  border: 2px solid skyblue;
+}
+
+span{
+  margin-top: -10px;
+  color: red;
+}
